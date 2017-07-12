@@ -1,0 +1,22 @@
+body {
+  color: blue;
+  background: yellow; }
+
+div {
+  color: blue; }
+
+.card {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg); }
+
+.andy {
+  -webkit-transition: rotate(120deg);
+  transition: rotate(120deg); }
+
+#test {
+  -webkit-transform: skew(10, 20);
+          transform: skew(10, 20); }
+
+/*# sourceMappingURL=all.css.map */
