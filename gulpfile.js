@@ -113,6 +113,11 @@ gulp.task('watch', function() {
     gulp.watch('./source/images/**/', ['image-min']);
 });
 
+gulp.task('deploy', function() {
+    return gulp.src('./public/**/*')
+        .pipe($.ghPages());
+});
+
 gulp.task('build', gulpSequence('clean', 'jade', 'sass', 'babel', 'vendorjs', 'image-min'));
 
 gulp.task('default', ['jade', 'sass', 'babel', 'vendorjs', 'browser-sync', 'image-min', 'watch']);
